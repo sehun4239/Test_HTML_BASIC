@@ -23,7 +23,7 @@ function call_ajax() {
                         async: true,
                         url: "https://dapi.kakao.com/v2/search/image",
                         data: {
-                            query: "영화 " + movie + " 포스터"
+                            query: "영화 " + movie + " 공식 포스터"
                         },
                         beforeSend: function (xhr) {
                             xhr.setRequestHeader("Authorization", "KakaoAK 211ebd038ecdb19865f10c50b888df13")
