@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- HTML은 tag로 구성된 언어에요 ! -->
+<!-- tag는 두가지 종류가 있어요 !!
+    1. 시작 태그와 닫는태그로 구성된 태그가 있다.
+    2. 시작 태그만 가지고 있는 태그가 있다.
+-->
+<!-- element
+    tag는 중첩구조를 가질 수 있어요. 하나의 tag가 다른 tag들을 포함할 수 있어요.
+    이때 부모와 자식의 관계가 성립해요! (다만 바로 위 tag에 대해서만, e.g. h1의 부모는 div만, 그 더 위들은 조상 반대는 후손)
+
+    tag와 tag안에 포함된 요소들을 통칭해서 => element라 한다.  e.g. <h1>하하하...</h1> -> h1 element라 한다.
+    => 이 외에 tag, (property, attribute) 외우자
+
+    HTML 문서는 크게 2가지 부분으로 구성돼요!
+    <head> : 설정부분 , <body> : web browser에서 rendering 할 데이터
+
+    tag는 두가지 종류가 있다.
+    1. block level element
+       무조건 1라인을 차지
+    2. inline element
+       내용에 대한 영역만 차지
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .myclass {
+                color: red;
+                background-color: yellow;
+                font-size: 30pt;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="myclass">아우성!!</h1>
+        <h2>아우성!!</h2>
+        <h3 class="myclass">아우성!!</h3>
+        <h4>아우성!!</h4>
+        <h5>아우성!!</h5>
+        <h6>아우성!!</h6>
+        <div>이것은 소리없는 아우성!!</div>        <!--모든 텍스트는 추후 handling하기 위해 tag안에 들어가야함
+                                                     div, span은 영역을 잡아 안에 글자가 들어 갈 수 있도록함 -->
+        <img src="image/car.jpg" width="300" data-author="홍길동">  <!-- 보통은 설정들은 head (CSS)로 설정하는 것이 좋다 -->
+
+        <!-- ul => unordered list , ol => ordered list -->
+        <br><br><br><br><br><br><br><br>
+        <ul>
+            <li>서울</li>
+            <li class="myclass">송도</li>
+            <li>수원</li>
+        </ul>
+        <ol>
+            <li>홍길동</li>
+            <li>김길동</li>
+            <li>장길동</li>
+        </ol>
+        <a href="https://moon9342.github.io/tag/python/">여기를 클릭클릭 !!</a>    <!-- 앵커? 하이퍼링크역할-->
+        <!-- 사용자 입력 양식 -->
+        <input type="button" value="버튼을 누르세요">
+        <input type="text">
+        <input type="date">
+        <input type="color">
+    <!--    <div>
+                <h1>하하하...</h1>
+            </div>
+    -->
+    </body>
+</html>

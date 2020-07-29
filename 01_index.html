@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--head에는 일반적인 설정이 온다. 이게 html의 주석-->
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            h1 {
+                color : red;
+            }
+        </style>
+        <script>                                // 위에 style은 CSS, 이건 자바 스크립트 언어
+            function my_func(){
+                alert("소리없는 아우성 !!");       // 경고창을 출력 !   자바스크립트의 주석은 슬래쉬 2개
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Browser에 출력하고 싶은 내용이 와요 ! -->
+        <!-- <''> 이게 (여는, 닫는)태그라 한다. 그리고 < >, </> 이게 하나의 element이다. 다만 아래 <img>도 element이고
+        src는 property임 -->
+        <h1>이것은 소리 없는 아우성 ! 껄껄껄</h1>       <!--  '태그가 다양하다' heading 1 : 안의 글자를 크게 찍어내라-->
+        <input type="button" value="클릭클릭!!" onclick="my_func()">
+        <br>                    <!-- <br>은 한줄 띄라는 의미 -->
+        <img src="image/car.jpg">               <!-- img(이미지) src(소스가 어디있는지) -->
+        <!-- element, tag, property(attribute) -->
+    </body>
+
+
+</html>
